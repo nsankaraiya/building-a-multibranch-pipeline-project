@@ -8,10 +8,5 @@ pipeline {
                 sh 'npm -v'
             }
         }
-        stage('Test') {
-            steps {
-                sh './jenkins/scripts/test.sh'
-            }
-        }
     }
 }
