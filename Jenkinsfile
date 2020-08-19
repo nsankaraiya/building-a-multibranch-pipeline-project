@@ -3,9 +3,9 @@ pipeline {
         dockerfile { args '-p 3000:3000 -p 5000:5000' }
     }
     stages {
-        stage('Version') {
+        stage('Build') {
             steps {
-                sh 'node --version'
+                sh 'npm install'
             }
         }
         stage('Test') {
